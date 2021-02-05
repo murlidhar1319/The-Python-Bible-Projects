@@ -13,7 +13,7 @@ print(even_numbers)
 
 
 print('Odd Numbers; ')
-odd_numbers=[y for y in range(1,100)if y%2 != 0]
+odd_numbers=[y for y in range(1, 100)if y%2 != 0]
 print(odd_numbers)
 
 
