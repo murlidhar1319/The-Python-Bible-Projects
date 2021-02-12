@@ -23,8 +23,8 @@ classes makes an object !
 
 '''
 classes;
-    -> constructers
-    -> deconstructers
+    -> constructers   | __init__(self)
+    -> destructors    | __del__(self)
     ->
 
 

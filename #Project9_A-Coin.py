@@ -36,7 +36,7 @@ class rupee1:
         self.heads = output
 
 
-    def __del__(self):               #deconstructor
+    def __del__(self):               #destructor
         print("Coin Speant !")
 
 
@@ -61,7 +61,7 @@ coin1.flip()
 print('heads;',coin1.heads)
 
 
-del coin1       #deconstruct the coin1
+del coin1       #destruct the coin1
 
 
 

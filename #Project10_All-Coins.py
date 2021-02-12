@@ -37,7 +37,7 @@ class coin:   #ultimate coin class/template
     def clean(self):   #clean
         self.colour = self.clean_colour
 
-    def __del__(self):   #deconstructor
+    def __del__(self):   #destructor
         print('Coin Spent !')
 
     def flip(self):
