@@ -45,6 +45,10 @@ class coin:   #ultimate coin class/template
         output = random.choice(results)   #random.choice
         self.heads = output
 
+    def __str__(self):
+        return "{} coin".format(coins)
+
+
 
 #classs   
 class rupee1(coin):   #rupee1
@@ -91,9 +95,41 @@ class rupee5(coin):   #rupee5
 
         super().__init__(**data)        #constructor   #data unpacking   #kwargs
 
+    #self cleaning
+    def rust(self):
+        self.colour = self.clean_colour
+    
+    def clean(self):
+        self.colour = self.clean_colour
 
 
 
+
+
+
+coins = [rupee1(), rupee2(), rupee5()]
+
+for coin in coins:
+    arguments = [coin, coin.colour, coin.value, coin.edges, coin.mass, coin.diameter, coin.thickness]
+    output = "{} - colour; {}, value; {}, edges; {}, mass; {}, diameter; {}, thickness; {} ".format(*arguments)
+    print(output)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 #objects
 
 coin1 = rupee1()
@@ -133,14 +169,7 @@ print('value;', coin5.value)
 print(coin5.value,'\n')
 
 
+'''
 
-#better way for printing the value
-
-coins = [rupee1(), rupee2(), rupee5()]
-
-for coin in coins:
-    arguments = [coin, coin.colour, coin.value, coin.edges, coin.mass, coin.diameter, coin.thickness]
-    output = '{} - colour; {}, value; {}, edges; {}, mass; {}, diameter; {}, thickness; {} '.format(arguments)
-    print(output)
 
 
